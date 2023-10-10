@@ -1,0 +1,63 @@
+POST http://localhost:3333/thoughts
+content-type: application/json
+
+{
+    "title": "Teste pensamento 04",
+    "description": "segundo pensamento publicado"
+}
+
+###
+
+GET http://localhost:3333/thoughts
+
+###
+GET http://localhost:3333/thoughts/2
+
+###
+
+PUT http://localhost:3333/thoughts/3
+content-type: application/json
+
+{
+    "title": "Teste pensamento 03",
+    "description": "terceiro pensamento publicado"
+}
+
+###
+DELETE http://localhost:3333/thoughts/5
+
+
+###
+POST http://localhost:3333/users
+content-type: application/json
+
+{
+    "name": "Carla Dias",
+    "email": "carla@carla.com",
+    "password": "123456",
+    "confirm_password": "123456", 
+    "image": "image-teste.png",
+    "description": "Desenvolvedora Full Stack na Google"
+}
+
+###
+GET http://localhost:3333/users
+
+###
+GET http://localhost:3333/users/1
+
+###
+PUT http://localhost:3333/users/1
+content-type: application/json
+
+{
+    "name": "Robertooo Dias",
+    "email": "roberto@roberto.com",
+    "password": "123456",
+    "confirm_password": "123456", 
+    "image": "image-teste.png",
+    "description": "Desenvolvedor Full Stack na Google"
+}
+
+###
+DELETE http://localhost:3333/users/2
